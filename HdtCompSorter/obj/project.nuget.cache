@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "O2IHSUF0Z+8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Jespe\\source\\HdtCompSorter\\HdtCompSorter.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jespe\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Jespe\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net472\\1.0.3\\microsoft.netframework.referenceassemblies.net472.1.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <AssemblyName>HdtCompSorter</AssemblyName>
+    <RootNamespace>HdtCompSorter</RootNamespace>
+    <Version>1.0.0</Version>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <HdtDir Condition="'$(HdtDir)' == ''">$(LOCALAPPDATA)\HearthstoneDeckTracker\current</HdtDir>
+    <PluginDir>$(APPDATA)\HearthstoneDeckTracker\Plugins\HdtCompSorter</PluginDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="System.Xaml" />
+    <!-- Compile against the installed HDT; never copy its assemblies next to the plugin -->
+    <Reference Include="HearthstoneDeckTracker">
+      <HintPath>$(HdtDir)\HearthstoneDeckTracker.exe</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="HearthDb">
+      <HintPath>$(HdtDir)\HearthDb.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="HSReplay">
+      <HintPath>$(HdtDir)\HSReplay.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="InstallPlugin" AfterTargets="Build" Condition="'$(Configuration)' == 'Release'">
+    <MakeDir Directories="$(PluginDir)" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(PluginDir)" />
+  </Target>
+
+</Project>

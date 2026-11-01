@@ -1,0 +1,9 @@
+C:\Users\Jespe\source\HdtCompSorter\bin\Release\net472\HdtCompSorter.dll
+C:\Users\Jespe\source\HdtCompSorter\bin\Release\net472\HdtCompSorter.pdb
+C:\Users\Jespe\source\HdtCompSorter\obj\Release\net472\HdtCompSorter.csproj.AssemblyReference.cache
+C:\Users\Jespe\source\HdtCompSorter\obj\Release\net472\HdtCompSorter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jespe\source\HdtCompSorter\obj\Release\net472\HdtCompSorter.AssemblyInfoInputs.cache
+C:\Users\Jespe\source\HdtCompSorter\obj\Release\net472\HdtCompSorter.AssemblyInfo.cs
+C:\Users\Jespe\source\HdtCompSorter\obj\Release\net472\HdtCompSorter.csproj.CoreCompileInputs.cache
+C:\Users\Jespe\source\HdtCompSorter\obj\Release\net472\HdtCompSorter.dll
+C:\Users\Jespe\source\HdtCompSorter\obj\Release\net472\HdtCompSorter.pdb
